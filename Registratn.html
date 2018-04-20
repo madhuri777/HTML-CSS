@@ -1,0 +1,38 @@
+<html>
+<head>
+  <title>Registraton Form With Validation</title>
+    <link rel='stylesheet' href='FormValidation.css' type='text/css'/>
+    <script></script>
+</head>
+<body>
+  <h1><center>Registraton Form</center></h1>
+    <form name="registration" onsubmit="return formvalidation();"><center>
+      <ul>
+        <li><lable for="user_id">UserId </lable> <input type="text" name="userid"/></li><br>
+        <li><lable for="Password">PassWord </lable><input type="password" name="pass"/></li><br>
+        <li><lable for="user_name">UserName </lable><input type="text" name="user_name"/></li><br>
+        <li><lable for="address">Address </lable><input type="text" name="add"/></li><br>
+        <li><lable for="country">Country </lable><select name="country">
+        <option selected="" value="Default">please select country</option>
+        <option value="A">Australia</option>
+        <option value="C">Canada</option>
+        <option value="I">India</option>
+        <option value="R">Russia</option>
+        <option value="U">USA</option>
+        </select><br><br>
+        <li><label for="Zip_code">Zip Code</lable><input type="text" name="zipcode"/></li><br>
+        <li><lable for="E_mail">E-mail</lable><input type="text" name="email"/><br></li>
+        <li><lable for="Gender">Gender</lable>
+        <input type="radio" name="gender" value="Male" checked/><span>Male</span>
+        <input type="radio" name="gender" value="Female"/><span>Female</span></li><br>
+        <li><lable for="Language">Language
+        <input type="checkbox" name="eng" checked/>English
+        <input type="checkbox" name="noneng"/>Hindi
+        <input type="checkbox" name="noneng"/>Japanese
+        <li><lable for="des">About</lable>
+        <textarea name="desc" name="desc"></textarea></li><br><br>
+        <input type="submit" name="submit"/>
+      </ul>
+    </form></center>
+</body>
+</html>
